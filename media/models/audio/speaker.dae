@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.75.0 commit date:2015-07-07, commit time:14:56, hash:c27589e</authoring_tool>
+    </contributor>
+    <created>2015-09-27T22:13:05</created>
+    <modified>2015-09-27T22:13:05</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="MattePlastic-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.01173567 0.01173567 0.01173567 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Wood-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.06126419 0.008543048 0.001433078 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.01 0.01 0.01 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="BlackPlastic-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.01758348 0.01758348 0.01758348 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.01 0.01 0.01 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="MattePlastic-material" name="MattePlastic">
+      <instance_effect url="#MattePlastic-effect"/>
+    </material>
+    <material id="Wood-material" name="Wood">
+      <instance_effect url="#Wood-effect"/>
+    </material>
+    <material id="BlackPlastic-material" name="BlackPlastic">
+      <instance_effect url="#BlackPlastic-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="SpeakerFoot-mesh" name="SpeakerFoot">
+      <mesh>
+        <source id="SpeakerFoot-mesh-positions">
+          <float_array id="SpeakerFoot-mesh-positions-array" count="246">0 0.4645435 0 -0.3284819 0.3284819 0 -0.4645435 0 0 -0.3284819 -0.3284819 0 0 -0.4645435 0 0.3284819 -0.3284818 0 0.4645435 0 0 0.3284819 0.3284818 0 0 0.4645435 -0.1598392 -0.3284819 0.3284819 -0.1598392 -0.4645435 0 -0.1598392 -0.3284819 -0.3284819 -0.1598392 0 -0.4645435 -0.1598392 0.3284819 -0.3284818 -0.1598392 0.4645435 0 -0.1598392 0.3284819 0.3284818 -0.1598392 0 0.4428541 0 -0.3131451 0.3131451 0 -0.4428541 0 0 -0.3131451 -0.3131451 0 0 -0.4428541 0 0.3131452 -0.3131451 0 0.4428541 0 0 0.3131452 0.3131451 0 0 0 0 0.2513688 0 -0.7214384 0.1777446 -0.1777446 -0.7214384 0 -0.2513688 -0.7214384 -0.1777446 -0.1777446 -0.7214384 -0.2513688 0 -0.7214384 -0.1777446 0.1777446 -0.7214384 0 0.2513688 -0.7214384 0.1777446 0.1777446 -0.7214384 -0.290861 0 -0.617398 0 0.2032678 -0.7214384 -0.143732 0.143732 -0.7214384 -0.2032678 0 -0.7214384 -0.143732 -0.143732 -0.7214384 0 -0.2032678 -0.7214384 0.1437321 -0.143732 -0.7214384 0.2032678 0 -0.7214384 0.1437321 0.143732 -0.7214384 -0.2056698 -0.2056698 -0.617398 0 -0.290861 -0.617398 0.2056698 -0.2056697 -0.617398 0.290861 0 -0.617398 0 0.290861 -0.617398 0.2056698 0.2056698 -0.617398 -0.2056698 0.2056698 -0.617398 -0.458931 0 -0.174625 -0.3245133 -0.3245133 -0.174625 0 -0.458931 -0.174625 0.3245133 -0.3245132 -0.174625 0.458931 0 -0.174625 0.3245133 0.3245132 -0.174625 -0.3245133 0.3245133 -0.174625 0 0.458931 -0.174625 0.3284819 0.3284818 -0.1398593 0 0.4645435 -0.1398593 0.4645435 0 -0.1398593 0.3284819 -0.3284818 -0.1398593 0 -0.4645435 -0.1398593 -0.3284819 -0.3284819 -0.1398593 -0.4645435 0 -0.1398593 -0.3284819 0.3284819 -0.1398593 0.3284819 0.3284818 -0.01234048 0.4645435 0 -0.01234048 0.3284819 -0.3284818 -0.01234048 0 -0.4645435 -0.01234048 -0.3284819 -0.3284819 -0.01234048 -0.4645435 0 -0.01234048 -0.3284819 0.3284819 -0.01234048 0 0.4645435 -0.01234048 0 0.088777 -0.627801 -0.06277483 0.06277483 -0.627801 -0.088777 0 -0.627801 -0.06277483 -0.06277483 -0.627801 0 -0.088777 -0.627801 0.06277489 -0.06277483 -0.627801 0.08877706 0 -0.627801 0.06277489 0.06277483 -0.627801 0 0 -0.627801</float_array>
+          <technique_common>
+            <accessor source="#SpeakerFoot-mesh-positions-array" count="82" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SpeakerFoot-mesh-normals">
+          <float_array id="SpeakerFoot-mesh-normals-array" count="174">0 -1 0 0 -0.9849143 0.1730436 -0.6964398 -0.6964398 0.1730417 -0.7071068 -0.7071068 0 -0.9849143 0 0.1730436 -1 0 0 -0.6964398 0.6964398 0.1730417 -0.7071068 0.7071068 0 0 0.9849143 0.1730436 0 1 0 0.6964398 0.6964398 0.1730417 0.7071068 0.7071068 0 0.9849143 0 0.1730436 1 0 0 0.6964398 -0.6964398 0.1730417 0.7071068 -0.7071068 0 -0.5489864 -0.5489864 -0.6302602 0 0 -1 -0.7763856 0 -0.6302583 -0.5489864 0.5489864 -0.6302602 0 0.7763856 -0.6302583 0.5489864 0.5489864 -0.6302602 0.7763856 0 -0.6302583 0.5489864 -0.5489864 -0.6302602 0 -0.7763856 -0.6302583 0.6610825 -0.6610825 0.3548805 0.4591367 -0.4591367 0.7605177 0 -0.6493274 0.760509 0.9349145 0 0.3548732 0.6493274 0 0.760509 0.6610825 0.6610825 0.3548805 0.4591367 0.4591367 0.7605177 0 0.9349145 0.3548732 0 0.6493274 0.760509 -0.6610825 0.6610825 0.3548805 -0.4591367 0.4591367 0.7605177 -0.9349145 0 0.3548732 -0.6493274 0 0.760509 -0.6610825 -0.6610825 0.3548805 -0.4591367 -0.4591367 0.7605177 0 -0.9349145 0.3548732 0 0.2578222 0.9661924 -0.1823181 0.1823181 0.9661885 -0.2870943 0.2870943 0.9138675 -0.2578222 0 0.9661924 -0.4060252 0 0.9138619 -0.1823181 -0.1823181 0.9661885 -0.2870943 -0.2870943 0.9138675 0 -0.2578222 0.9661924 0 -0.4060252 0.9138619 0.1823181 -0.1823181 0.9661885 0.2870943 -0.2870943 0.9138675 0.2578222 0 0.9661924 0.4060252 0 0.9138619 0.1823181 0.1823181 0.9661885 0.2870943 0.2870943 0.9138675 0 0.4060252 0.9138619 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#SpeakerFoot-mesh-normals-array" count="58" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="SpeakerFoot-mesh-vertices">
+          <input semantic="POSITION" source="#SpeakerFoot-mesh-positions"/>
+        </vertices>
+        <polylist material="MattePlastic-material" count="160">
+          <input semantic="VERTEX" source="#SpeakerFoot-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#SpeakerFoot-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>58 0 8 1 15 2 57 3 15 2 14 4 59 5 14 4 13 6 60 7 13 6 12 8 61 9 12 8 11 10 62 11 11 10 10 12 63 13 10 12 9 14 64 15 9 14 8 1 7 16 23 17 16 17 6 18 22 17 23 17 6 18 5 19 21 17 5 19 4 20 20 17 4 20 3 21 19 17 3 21 2 22 18 17 1 23 17 17 18 17 0 24 16 17 17 17 48 25 30 26 31 27 33 28 29 29 30 26 33 28 42 30 28 31 42 30 43 32 27 33 43 32 44 34 26 35 45 36 25 37 26 35 45 36 47 38 32 39 46 40 31 27 32 39 16 17 23 17 24 17 23 17 22 17 24 17 22 17 21 17 24 17 21 17 20 17 24 17 20 17 19 17 24 17 19 17 18 17 24 17 18 17 17 17 24 17 17 17 16 17 24 17 34 41 35 42 74 43 36 44 75 45 74 43 37 46 76 47 75 45 38 48 77 49 76 47 39 50 78 51 77 49 40 52 79 53 78 51 40 52 41 54 80 55 34 41 73 56 80 55 31 27 34 41 41 54 25 37 32 39 41 54 25 37 40 52 39 50 26 35 39 50 38 48 27 33 38 48 37 46 28 31 37 46 36 44 29 29 36 44 35 42 31 27 30 26 35 42 55 25 48 25 46 40 55 25 49 28 33 28 50 30 42 30 33 28 51 32 43 32 42 30 52 34 44 34 43 32 53 36 45 36 44 34 54 38 47 38 45 36 56 40 46 40 47 38 9 14 55 25 56 40 9 14 10 12 49 28 11 10 50 30 49 28 11 10 12 8 51 32 13 6 52 34 51 32 14 4 53 36 52 34 14 4 15 2 54 38 8 1 56 40 54 38 72 0 58 0 57 3 65 3 57 3 59 5 66 5 59 5 60 7 67 7 60 7 61 9 68 9 61 9 62 11 69 11 62 11 63 13 70 13 63 13 64 15 71 15 64 15 58 0 0 24 72 0 65 3 7 16 65 3 66 5 6 18 66 5 67 7 5 19 67 7 68 9 4 20 68 9 69 11 3 21 69 11 70 13 2 22 70 13 71 15 1 23 71 15 72 0 80 55 73 56 81 57 79 53 80 55 81 57 78 51 79 53 81 57 77 49 78 51 81 57 76 47 77 49 81 57 75 45 76 47 81 57 74 43 75 45 81 57 73 56 74 43 81 57 57 3 58 0 15 2 59 5 57 3 14 4 60 7 59 5 13 6 61 9 60 7 12 8 62 11 61 9 11 10 63 13 62 11 10 12 64 15 63 13 9 14 58 0 64 15 8 1 0 24 7 16 16 17 7 16 6 18 23 17 22 17 6 18 21 17 21 17 5 19 20 17 20 17 4 20 19 17 19 17 3 21 18 17 2 22 1 23 18 17 1 23 0 24 17 17 46 40 48 25 31 27 48 25 33 28 30 26 29 29 33 28 28 31 28 31 42 30 27 33 27 33 43 32 26 35 44 34 45 36 26 35 25 37 45 36 32 39 47 38 46 40 32 39 73 56 34 41 74 43 35 42 36 44 74 43 36 44 37 46 75 45 37 46 38 48 76 47 38 48 39 50 77 49 39 50 40 52 78 51 79 53 40 52 80 55 41 54 34 41 80 55 32 39 31 27 41 54 40 52 25 37 41 54 26 35 25 37 39 50 27 33 26 35 38 48 28 31 27 33 37 46 29 29 28 31 36 44 30 26 29 29 35 42 34 41 31 27 35 42 56 40 55 25 46 40 48 25 55 25 33 28 49 28 50 30 33 28 50 30 51 32 42 30 51 32 52 34 43 32 52 34 53 36 44 34 53 36 54 38 45 36 54 38 56 40 47 38 8 1 9 14 56 40 55 25 9 14 49 28 10 12 11 10 49 28 50 30 11 10 51 32 12 8 13 6 51 32 13 6 14 4 52 34 53 36 14 4 54 38 15 2 8 1 54 38 65 3 72 0 57 3 66 5 65 3 59 5 67 7 66 5 60 7 68 9 67 7 61 9 69 11 68 9 62 11 70 13 69 11 63 13 71 15 70 13 64 15 72 0 71 15 58 0 7 16 0 24 65 3 6 18 7 16 66 5 5 19 6 18 67 7 4 20 5 19 68 9 3 21 4 20 69 11 2 22 3 21 70 13 1 23 2 22 71 15 0 24 1 23 72 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="SpeakerFeetBase-mesh" name="SpeakerFeetBase">
+      <mesh>
+        <source id="SpeakerFeetBase-mesh-positions">
+          <float_array id="SpeakerFeetBase-mesh-positions-array" count="12">-0.6416839 -1.47631 0 1.176774 -1.47631 0 -0.6416839 1.47631 0 1.176774 1.47631 0</float_array>
+          <technique_common>
+            <accessor source="#SpeakerFeetBase-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SpeakerFeetBase-mesh-normals">
+          <float_array id="SpeakerFeetBase-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#SpeakerFeetBase-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="SpeakerFeetBase-mesh-vertices">
+          <input semantic="POSITION" source="#SpeakerFeetBase-mesh-positions"/>
+        </vertices>
+        <polylist count="2">
+          <input semantic="VERTEX" source="#SpeakerFeetBase-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#SpeakerFeetBase-mesh-normals" offset="1"/>
+          <vcount>3 3 </vcount>
+          <p>1 0 3 0 2 0 0 0 1 0 2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="SpeakerBody-mesh" name="SpeakerBody">
+      <mesh>
+        <source id="SpeakerBody-mesh-positions">
+          <float_array id="SpeakerBody-mesh-positions-array" count="147">1.477364 -1.314974 -1.329914 1.477364 1.314974 -1.329914 1.477364 1.314974 2.944834 1.477364 -1.314974 2.944834 1.245276 -1.467742 -1.472683 1.245276 1.467742 -1.472683 1.245276 1.467742 3.199139 1.245276 -1.467742 3.199139 1.245276 -1.467742 -0.1385318 1.245276 -1.467742 -0.424246 1.205695 -1.467742 -1.472683 1.205695 1.467742 -1.472683 1.205695 1.467742 3.199139 1.205695 -1.467742 3.199139 1.205695 -1.367742 3.199139 1.205695 -1.467742 -0.7099604 -0.863966 -1.467742 -1.472683 -0.863966 1.467742 -1.472683 -0.863966 1.467742 3.199139 -0.863966 -1.467742 3.199139 -0.863966 -1.367742 3.199139 -0.863966 1.467742 1.49004 -0.863966 1.427338 -1.432278 -0.863966 -1.367742 3.158734 -0.863966 -1.427338 3.158734 -0.863966 -1.427338 -1.432278 -0.863966 1.427338 3.158734 -0.863966 1.427338 1.49004 -0.8092749 1.427338 -1.432278 -0.8092749 -1.427338 3.158734 -0.8092749 -1.427338 -1.432278 -0.8092749 1.427338 3.158734 1.245276 1.427742 -1.432683 1.245276 -1.427742 3.159139 1.245276 -1.427742 -1.432683 1.245276 1.427742 3.159139 1.245276 -1.427742 -0.424246 1.245276 -1.427742 0.1471825 1.205695 1.427742 -1.432683 1.205695 -1.427742 3.159139 1.205695 -1.427742 -1.432683 1.205695 1.427742 3.159139 1.205695 -1.427742 -0.7099604 1.263129 1.467742 3.199139 1.263129 -1.467742 3.199139 1.359088 1.462742 -1.472683 1.359088 -1.462742 3.190374 1.359088 -1.462742 -1.472683 1.359088 1.462742 3.190374</float_array>
+          <technique_common>
+            <accessor source="#SpeakerBody-mesh-positions-array" count="49" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SpeakerBody-mesh-normals">
+          <float_array id="SpeakerBody-mesh-normals-array" count="126">0 0 -1 0.7700694 0 -0.6379602 0.9009258 0 0.4339733 0.04388946 0.9990364 0 0 0 1 0 1 0 0 -1 0 1 0 0 0 1 0 0.7807122 0.6248909 0 -1 0 0 1 2.38245e-7 0 -1 5.10334e-6 0 2.86426e-6 0 -1 0.7807121 -0.6248911 0 1 0 0 0.04388964 -0.9990364 0 0.09095901 0 0.9958547 0.7700697 0 -0.63796 0.9009263 0 0.4339723 0 0.8686171 -0.4954841 0.04388958 0.9990364 0 0 -1 0 1 0 0 0.7807112 0.6248921 0 0 -1 3.82457e-7 -1 -2.60771e-6 0 0 1 0 -1 0 0 -1 -2.23227e-6 0 -1 0 0 -1 0 0 0.7807112 -0.6248921 0 1 -3.90737e-6 1.56294e-7 1 0 1.64945e-7 1 4.90399e-6 0 1 0 0 0.0438894 -0.9990364 0 0.04388964 -0.9990364 0 0 -0.8686082 -0.4954997 0.04388946 -0.9990364 0 0.09095734 0 0.9958548</float_array>
+          <technique_common>
+            <accessor source="#SpeakerBody-mesh-normals-array" count="42" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="SpeakerBody-mesh-vertices">
+          <input semantic="POSITION" source="#SpeakerBody-mesh-positions"/>
+        </vertices>
+        <polylist material="Wood-material" count="46">
+          <input semantic="VERTEX" source="#SpeakerBody-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#SpeakerBody-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>17 0 11 0 10 0 38 0 32 0 34 0 41 4 39 4 33 4 41 5 35 5 32 5 36 6 37 6 42 6 29 8 30 8 25 8 30 4 28 4 22 4 23 0 26 0 31 0 19 6 16 6 15 6 27 6 28 6 31 6 14 4 20 4 13 4 21 8 18 8 12 8 15 11 39 11 13 11 38 15 40 15 11 15 28 10 30 10 29 10 16 0 17 0 10 0 40 0 38 0 34 0 35 4 41 4 33 4 38 8 41 8 32 8 42 6 40 6 34 6 37 6 39 6 42 6 39 6 37 6 33 6 42 22 34 22 36 22 24 8 29 8 25 8 25 4 30 4 22 4 29 0 24 0 23 0 23 0 31 0 29 0 15 6 13 6 19 6 16 25 10 25 15 25 28 6 27 6 22 6 27 6 31 6 26 6 20 4 14 4 12 4 20 4 19 4 13 4 12 4 18 4 20 4 11 8 17 8 21 8 21 27 12 27 11 27 39 15 15 15 42 15 39 15 14 15 13 15 41 15 14 15 39 15 40 33 15 33 10 33 12 15 14 15 41 15 40 34 42 34 15 34 11 35 12 35 41 35 40 15 10 15 11 15 11 36 41 36 38 36 31 10 28 10 29 10</p>
+        </polylist>
+        <polylist material="BlackPlastic-material" count="36">
+          <input semantic="VERTEX" source="#SpeakerBody-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#SpeakerBody-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>1 1 0 1 47 1 3 2 2 2 48 2 48 3 45 3 5 3 3 7 0 7 1 7 2 9 1 9 45 9 36 10 9 10 8 10 43 4 6 4 7 4 35 12 6 12 5 12 5 13 45 13 47 13 47 14 0 14 3 14 46 16 7 16 8 16 46 17 48 17 43 17 45 18 1 18 47 18 46 19 3 19 48 19 6 20 43 20 48 20 48 21 5 21 6 21 2 23 3 23 1 23 48 24 2 24 45 24 37 26 36 26 8 26 44 4 43 4 7 4 9 28 36 28 34 28 7 29 37 29 8 29 4 30 9 30 34 30 33 10 37 10 7 10 4 10 34 10 32 10 35 10 33 10 7 10 5 10 4 10 32 10 35 10 7 10 6 10 5 31 32 31 35 31 4 0 5 0 47 0 46 32 47 32 3 32 9 37 4 37 47 37 47 38 8 38 9 38 46 39 44 39 7 39 8 40 47 40 46 40 44 41 46 41 43 41</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="SpeakerEmpty" name="SpeakerEmpty" type="NODE">
+        <matrix sid="transform">-3.73231e-9 0.08538531 0 0 -0.08538531 -3.73231e-9 0 0 0 0 0.08538531 0 0 0 0 1</matrix>
+        <node id="SpeakerBody" name="SpeakerBody" type="NODE">
+          <matrix sid="transform">1 0 0 2.18146e-8 0 1 0 1.74517e-7 0 0 1 1.678968 0 0 0 1</matrix>
+          <instance_geometry url="#SpeakerBody-mesh" name="SpeakerBody">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Wood-material" target="#Wood-material"/>
+                <instance_material symbol="BlackPlastic-material" target="#BlackPlastic-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <node id="SpeakerFeetBase" name="SpeakerFeetBase" type="NODE">
+            <matrix sid="transform">0.8264316 -3.55271e-15 0 -2.98023e-8 3.55271e-15 0.8264316 0 0 0 0 0.8264317 -1.478707 0 0 0 1</matrix>
+            <instance_geometry url="#SpeakerFeetBase-mesh" name="SpeakerFeetBase"/>
+            <node id="SpeakerFoot" name="SpeakerFoot" type="NODE">
+              <matrix sid="transform">0.3278158 0 0 0 0 0.3278158 0 0 0 0 0.3278158 0 0 0 0 1</matrix>
+              <instance_geometry url="#SpeakerFoot-mesh" name="SpeakerFoot">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="MattePlastic-material" target="#MattePlastic-material"/>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
