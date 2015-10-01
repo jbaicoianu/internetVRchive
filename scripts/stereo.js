@@ -1,4 +1,8 @@
 elation.require(['engine.things.generic', 'engine.things.sound'], function() {
+  /**
+   * elation.engine.things.stereo
+   * Represents a stereo in the game world.  Drop tapes in to set the platlist
+   */
   elation.component.add('engine.things.stereo', function() {
     this.postinit = function() {
       this.defineProperties({
@@ -23,7 +27,6 @@ elation.require(['engine.things.generic', 'engine.things.sound'], function() {
       }
     }
     this.stop = function() {
-console.log('stop it this instant', this.audio.playing);
       if (this.playing) {
         this.audio.stop();
       }
@@ -31,17 +34,20 @@ console.log('stop it this instant', this.audio.playing);
     this.setPlaylist = function(url) {
       this.stop();
       this.properties.playlist = url;
+      // TODO - these aren't really playlists right now, just individual tracks.  Parsing the m3u file would be easy though.
       this.audio.load(url);
     }
     this.canUse = function(object) {
       if (object.type == 'player') {
         if (object.holding && object.holding.type == 'stereo_cassette') {
+          // holding a cassette tape, swap tapes and play it
           return {
             verb: 'play',
             noun: object.holding.properties.label,
             action: elation.bind(this, this.swapTapes, object.holding)
           };
         } else if (this.playing) {
+          // Player isn't holding a cassette, if we're playing then pause
           return {
             verb: 'pause',
             action: elation.bind(this, this.pause)
@@ -57,7 +63,6 @@ console.log('stop it this instant', this.audio.playing);
     }
     this.swapTapes = function(tape, player) {
       player.holding = false; // FIXME - weird
-console.log('drop', this.holding, 'pickup', tape);
       if (this.holding) { // drop the existing tape
         player.pickup(this.holding, true);
         this.holding = false;
