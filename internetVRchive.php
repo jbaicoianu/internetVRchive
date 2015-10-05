@@ -9,4 +9,13 @@ class Component_internetVRchive extends Component {
     $vars = array();
     return $this->GetComponentResponse("./internetVRchive.tpl", $vars);
   }
+  public function controller_cors($args) {
+    $url = $args["url"];
+    $contents = file_get_contents($url);
+    $file_info = new finfo(FILEINFO_MIME_TYPE);
+    $mime_type = $file_info->buffer($contents);
+
+    header('Content-Type: $mime_type');
+    return $contents;
+  }
 }  
