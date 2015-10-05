@@ -20,3 +20,8 @@ git clone https://github.com/jbaicoianu/internetVRchive.git components/internetV
 ./elation component enable share
 ./elation component enable internetVRchive
 
+sudo ln -s $HOME/elation /var/www/elation
+sudo cp config/apache-elation.conf /etc/apache2/sites-available/
+sudo a2enmod rewrite
+sudo a2ensite apache-elation
+sudo a2dissite 000-default
