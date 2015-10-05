@@ -42,10 +42,10 @@ elation.require(['engine.things.generic', 'engine.things.sound'], function() {
       var pagebase = 'http://cors.archive.org/cors/' + this.identifier + '/' + this.identifier + '_jp2.zip/' + this.identifier + '_jp2%2F' + this.identifier + '_';
       // Unfortunately the archive.org zipfile viewer does not send CORS headers, so we have to proxy images loads through our own server
       if (!this.pages[pageid_left]) {
-        this.pages[pageid_left] = elation.engine.materials.getTexture('/engine/cors?url=' + encodeURIComponent(pagebase + pageid_left + '.jpg'));
+        this.pages[pageid_left] = elation.engine.materials.getTexture('/internetVRchive/cors?url=' + encodeURIComponent(pagebase + pageid_left + '.jpg'));
       }
       if (!this.pages[pageid_right]) {
-        this.pages[pageid_right] = elation.engine.materials.getTexture('/engine/cors?url=' + encodeURIComponent(pagebase + pageid_right + '.jpg'));
+        this.pages[pageid_right] = elation.engine.materials.getTexture('/internetVRchive/cors?url=' + encodeURIComponent(pagebase + pageid_right + '.jpg'));
       }
     }
     this.setPage = function(pagenum) {

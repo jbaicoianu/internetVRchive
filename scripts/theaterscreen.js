@@ -18,7 +18,6 @@ elation.require('engine.things.generic', function() {
       this.video.crossOrigin = 'anonymous';
 
       //elation.events.add(this.video, 'ended', elation.bind(this, this.play));
-  console.log('QWEEJhfjwqhfJQWHEFjhqejwfhd', this.properties.clickable);
       if (this.properties.clickable) {
         elation.events.add(this, 'click', elation.bind(this, this.play));
       }
