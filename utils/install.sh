@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo apt-get update
-sudo apt-get install git apache2 php5 libapache2-mod-php5 smarty3 php5-memcache
+sudo apt-get install -y git apache2 php5 libapache2-mod-php5 smarty3 php5-memcache
 
 git clone -b next https://github.com/jbaicoianu/elation.git
 cd elation
