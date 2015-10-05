@@ -25,3 +25,5 @@ sudo cp config/apache-elation.conf /etc/apache2/sites-available/
 sudo a2enmod rewrite
 sudo a2ensite apache-elation
 sudo a2dissite 000-default
+sudo service apache2 reload
+
