@@ -50,6 +50,10 @@ elation.require(['engine.things.generic', 'engine.things.sound'], function() {
     }
     this.setPage = function(pagenum) {
       if (this.parts['page_left']) {
+        var newpage = Math.min(this.numpages-1, pagenum),
+            pageid_left = ('000' + newpage).slice(-4),
+            pageid_right = ('000' + (newpage+1)).slice(-4);
+
         this.currentpage = pagenum;
 
         this.fetchPage(pagenum);
