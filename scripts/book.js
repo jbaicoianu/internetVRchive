@@ -19,7 +19,7 @@ elation.require(['engine.things.generic', 'engine.things.sound'], function() {
     this.createChildren = function() {
       this.flipsound = this.spawn('sound', null, {
         persist: true,
-        src: "/media/vrcade/models/books/page-flip-02.mp3",
+        src: "/media/internetVRchive/audio/page-flip-02.mp3",
         loop: false,
         autoplay: false
       });
