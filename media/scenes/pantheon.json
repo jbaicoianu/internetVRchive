@@ -203,7 +203,7 @@
           "type":"sound",
           "properties":{
             "persist":true,
-            "src":"https://archive.org/download/Monks/One_man_army-Monks.ogg",
+            "src":"https://archive.org/download/Monks_Of_The_Visoki_Decani_Monastry_Paraklesis__Kosovo_/22_All_Hosts_Of_Angels.ogg",
             "position": [ -0.625, 0, -5 ],
             "distance": 35,
             "volume": 0.25
