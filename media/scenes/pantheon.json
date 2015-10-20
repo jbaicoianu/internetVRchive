@@ -1,1 +1,213 @@
-{"name":"default","parentname":"","type":"sector","properties":{"fog":{"enabled":true,"color":0,"factor":1},"fog.enabled":false,"fog.color":"0x666666","persist":true},"things":{"ground":{"name":"ground","parentname":"","type":"terrain","properties":{"position":[0,0,100],"persist":true,"textures.map":"/media/space/textures/dirt.jpg","textures.mapRepeat":[100,100],"textures.normalMap":"/media/space/textures/dirt-normal.jpg"}},"sun":{"name":"sun","parentname":"","type":"light","properties":{"position":[-20,50,25],"persist":true,"type":"directional","intensity":0}},"pantheon":{"name":"pantheon","parentname":"","type":"generic","properties":{"position":[0,0.1,0],"persist":true,"render.collada":"/media/internetVRchive/models/pantheon/pantheon.dae","collidable":false},"things":{"speaker":{"name":"speaker","parentname":"","type":"portal","properties":{"position":[15.642180626715339,0,-15.11706686581791],"orientation":[0,-0.3826834323650898,0,0.9238795325112867],"childposition":[0,3.325,0],"childorientation":[0,1,0,0],"childscale":[10,10,10],"persist":true,"render.collada":"/media/internetVRchive/models/audio/technics-rs-bx404.dae","title":"Audio","url":"/media/internetVRchive/scenes/audio.json"}},"arcademachine":{"name":"arcademachine","parentname":"","type":"portal","properties":{"position":[-16.98729113434854,0,-16.024009709853875],"orientation":[0,0.3826834323650898,0,0.9238795325112867],"childscale":[4,4,4],"persist":true,"render.collada":"/media/internetVRchive/models/games/cabinet.dae","title":"Games"}},"computer":{"name":"computer","parentname":"","type":"portal","properties":{"position":[-23.04787289890349,0,0.42720916273077414],"orientation":[0,0.7071067811865475,0,0.7071067811865476],"childposition":[0,3,0],"childscale":[6,6,6],"persist":true,"render.collada":"/media/internetVRchive/models/software/ibmpc.dae","title":"Software"}},"filmcamera":{"name":"filmcamera","parentname":"","type":"portal","properties":{"position":[21.402444230592554,0,0.558850614402342],"orientation":[0,-0.7071067811865475,0,0.7071067811865476],"childposition":[0,2.5,0],"childscale":[3,3,3],"persist":true,"render.collada":"/media/internetVRchive/models/audio/filmcamera.dae","title":"Film","url":"/media/internetVRchive/scenes/film.json"}},"book":{"name":"book","parentname":"","type":"portal","properties":{"position":[-0.09621099263684141,0,-20.04188183723812],"orientation":[0,0,0,1],"childposition":[0,2.5,0],"childscale":[10,10,10],"childorientation":[0,0,0,1],"persist":true,"render.collada":"/media/internetVRchive/models/books/book-open/book-open.dae","title":"Books","url":"/media/internetVRchive/scenes/books.json"}}}},"player":{"name":"player","parentname":"","type":"player","properties":{"position":[-0.625,2.3,0],"orientation":[0,0,0,1],"acceleration":[-0.0017908185310051108,0.0005513645296634185,-0.002389317316849559],"mass":10,"persist":true,"startposition":[-0.625,2.3,0]}}}}
+{
+    "name": "default",
+    "parentname": "",
+    "type": "sector",
+    "properties": {
+        "fog": {
+            "enabled": true,
+            "color": 0,
+            "factor": 1
+        },
+        "fog.enabled": false,
+        "fog.color": "0x666666",
+        "persist": true
+    },
+    "things": {
+        "sky":{
+            "name":"sky",
+            "parentname":"",
+            "type":"skysphere",
+            "properties":{
+                "collidable":false,
+                "persist":true,
+                "skytexture":"/media/internetVRchive/images/galaxy_starfield.png"
+            }
+        },
+        "sun": {
+            "name": "sun",
+            "parentname": "",
+            "type": "light",
+            "properties": {
+                "position": [ -20, 50, 25 ],
+                "persist": true,
+                "type": "directional",
+                "intensity": 0
+            }
+        },
+        "pantheon": {
+            "name": "pantheon",
+            "parentname": "",
+            "type": "generic",
+            "properties": {
+                "position": [ 0, 0.1, 0 ],
+                "persist": true,
+                "render.collada": "/media/internetVRchive/models/pantheon/pantheon.dae",
+                "collidable": false
+            },
+            "things": {
+                "speaker": {
+                    "name": "speaker",
+                    "parentname": "",
+                    "type": "portal",
+                    "properties": {
+                        "position": [ 15.642180626715339, 0, -15.11706686581791 ],
+                        "orientation": [ 0, -0.3826834323650898, 0, 0.9238795325112867 ],
+                        "childposition": [ 0, 3.325, 0 ],
+                        "childorientation": [ 0, 1, 0, 0 ],
+                        "childscale": [ 10, 10, 10 ],
+                        "persist": true,
+                        "render.collada": "/media/internetVRchive/models/audio/technics-rs-bx404.dae",
+                        "title": "Audio",
+                        "url": "/media/internetVRchive/scenes/audio.json"
+                    }
+                },
+                "arcademachine": {
+                    "name": "arcademachine",
+                    "parentname": "",
+                    "type": "portal",
+                    "properties": {
+                        "position": [ -16.98729113434854, 0, -16.024009709853875 ],
+                        "orientation": [ 0, 0.3826834323650898, 0, 0.9238795325112867 ],
+                        "childscale": [ 4, 4, 4 ],
+                        "persist": true,
+                        "render.collada": "/media/internetVRchive/models/games/cabinet.dae",
+                        "title": "Games"
+                    }
+                },
+                "computer": {
+                    "name": "computer",
+                    "parentname": "",
+                    "type": "portal",
+                    "properties": {
+                        "position": [ -23.04787289890349, 0, 0.42720916273077414 ],
+                        "orientation": [ 0, 0.7071067811865475, 0, 0.7071067811865476 ],
+                        "childposition": [ 0, 3, 0 ],
+                        "childscale": [ 6, 6, 6 ],
+                        "persist": true,
+                        "render.collada": "/media/internetVRchive/models/software/ibmpc.dae",
+                        "title": "Software"
+                    }
+                },
+                "filmcamera": {
+                    "name": "filmcamera",
+                    "parentname": "",
+                    "type": "portal",
+                    "properties": {
+                        "position": [ 21.402444230592554, 0, 0.558850614402342 ],
+                        "orientation": [ 0, -0.7071067811865475, 0, 0.7071067811865476 ],
+                        "childposition": [ 0, 2.5, 0 ],
+                        "childscale": [ 3, 3, 3 ],
+                        "persist": true,
+                        "render.collada": "/media/internetVRchive/models/audio/filmcamera.dae",
+                        "title": "Film",
+                        "url": "/media/internetVRchive/scenes/film.json"
+                    }
+                },
+                "book": {
+                    "name": "book",
+                    "parentname": "",
+                    "type": "portal",
+                    "properties": {
+                        "position": [ -0.09621099263684141, 0, -20.04188183723812 ],
+                        "orientation": [ 0, 0, 0, 1 ],
+                        "childposition": [ 0, 2.5, 0 ],
+                        "childscale": [ 10, 10, 10 ],
+                        "childorientation": [ 0, 0, 0, 1 ],
+                        "persist": true,
+                        "render.collada": "/media/internetVRchive/models/books/book-open/book-open.dae",
+                        "title": "Books",
+                        "url": "/media/internetVRchive/scenes/books.json"
+                    }
+                }
+            }
+        },
+        "player": {
+            "name": "player",
+            "parentname": "",
+            "type": "player",
+            "properties": {
+                "position": [ -0.6116908773696781, 14.60229476997803, 180],
+                "orientation": [ 0, 0, 0, 1 ],
+                "acceleration": [ -0.0017908185310051108, 0.0005513645296634185, -0.002389317316849559 ],
+                "mass": 10,
+                "persist": true,
+                "startposition": [ -0.6116908773696781, 14.60229476997803, 180 ],
+                "startcameraorientation": [ -0.030945059056338594, -0, -0, 0.99952108698116 ]
+            }
+        },
+        "blackplane01": {
+            "name": "blackplane01",
+            "type": "plane",
+            "properties": {
+                "position": [ -0.6223420008658082, 30, 34 ],
+                "width": 48,
+                "height": 22
+            }
+        },
+        "blackplane02": {
+            "name": "blackplane02",
+            "type": "plane",
+            "properties": {
+                "position": [ -18, 10, 33 ],
+                "width": 15,
+                "height": 25
+            }
+        },
+        "blackplane03": {
+            "name": "blackplane03",
+            "type": "plane",
+            "properties": {
+                "position": [ 18, 10, 33 ],
+                "width": 15,
+                "height": 25
+            }
+        },
+        "logo_top": {
+            "name": "logo_top",
+            "type": "text",
+            "properties": {
+                "position": [ 0, 35, 50 ],
+                "width": 50,
+                "height": 10,
+                "font": "Droid Serif",
+                "text": "INTERNET",
+                "fontsize": 256
+            }
+        },
+        "logo_bottom": {
+            "name": "logo_bottom",
+            "type": "text",
+            "properties": {
+                "position": [ 0, -12, 50 ],
+                "width": 45,
+                "height": 10,
+                "font": "Droid Serif",
+                "text": "ARCHIVE",
+                "fontsize": 256
+            }
+        },
+        "ambience_outside":{
+          "name":"ambience_outside",
+          "parentname":"",
+          "type":"sound",
+          "properties":{
+            "persist":true,
+            "src":"https://ia801900.us.archive.org/13/items/trance_21/08-14LompeBeukerTrance.ogg",
+            "position": [ -0.625, 0, 133.09122620856533 ],
+            "distance": 130
+          }
+        },
+        "ambience_inside":{
+          "name":"ambience_inside",
+          "parentname":"",
+          "type":"sound",
+          "properties":{
+            "persist":true,
+            "src":"https://archive.org/download/Monks/One_man_army-Monks.ogg",
+            "position": [ -0.625, 0, -5 ],
+            "distance": 35,
+            "volume": 0.25
+          }
+        }
+    }
+}
