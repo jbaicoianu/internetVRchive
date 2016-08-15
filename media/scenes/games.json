@@ -1,0 +1,121 @@
+{
+    "name": "default",
+    "parentname": "",
+    "type": "sector",
+    "properties": {
+        "fog": {
+            "enabled": true,
+            "color": 0,
+            "factor": 1
+        },
+        "fog.enabled": false,
+        "fog.color": "0x666666",
+        "persist": true
+    },
+    "things": {
+        "sky":{
+            "name":"sky",
+            "parentname":"",
+            "type":"skysphere",
+            "properties":{
+                "collidable":false,
+                "persist":true,
+                "skytexture":"/media/internetVRchive/images/galaxy_starfield.png"
+            }
+        },
+        "sun": {
+            "name": "sun",
+            "parentname": "",
+            "type": "light",
+            "properties": {
+                "position": [ -20, 50, 25 ],
+                "persist": true,
+                "type": "directional",
+                "intensity": 0.1
+            }
+        },
+        "point01": {
+            "name": "point01",
+            "parentname": "",
+            "type": "light",
+            "properties": {
+                "position": [ -5, 2, 5 ],
+                "persist": true,
+                "type": "point",
+                "intensity": 0.4
+            }
+        },
+        "point02": {
+            "name": "point02",
+            "parentname": "",
+            "type": "light",
+            "properties": {
+                "position": [ 8, 0, 5 ],
+                "persist": true,
+                "type": "point",
+                "intensity": 0.4
+            }
+        },
+        "floor": {
+            "name":"floor",
+            "parentname":"",
+            "type":"terrain",
+            "properties":{
+              "textures.map": "/media/vrcade/models/flynns-v5/carpet-stars.jpg",
+              "textures.normalMap": "/media/vrcade/models/flynns-v5/carpet04-normal.jpg",
+              "textures.specularMap": "/media/vrcade/models/flynns-v5/carpet04-specular.jpg",
+              "textures.mapRepeat": [1000, 1000],
+              "textures.normalMapRepeat": [1000, 1000],
+              "textures.specularMapRepeat": [1000, 1000],
+              "textures.normalScale": [0.25, 0.25]
+            }
+        },
+        "pacman": {
+            "name": "pacman",
+            "parentname": "",
+            "type": "arcademachine",
+            "properties": {
+                "position": [ 0, 0.25, -0.5 ],
+                "scale": [ 0.16, 0.16, 0.16],
+                "persist": true,
+                "autoplay": true,
+                "executable": "/media/vrcade/systems/arcade/messvrcade.js",
+                "render.collada": "/media/vrcade/models/pacman/pacman.dae",
+                "fronttexture": "/media/vrcade/models/pacman/cabinet-combined-diffuse.jpg",
+                "sidetexture": "/media/vrcade/models/pacman/cabinet-combined-diffuse.jpg"
+            }
+        },
+        "player": {
+            "name":"player",
+            "parentname":"",
+            "type":"player",
+            "properties":{
+                "startposition":[0.0020435289134894713,0.1,0.029659215247324167],
+                "startorientation":[0,-0.0004866726078266194,0,0.9999998815748794],
+                "startcameraorientation":[-0.1819311291081989, -0, -0, 0.983311275365749],
+                "mass":10,
+                "height":1.2,
+                "fatness":0.1,
+                "movespeed":0,
+                "runspeed":30,
+                "persist":true
+            }
+        },
+        "home": {
+            "name":"home",
+            "parentname":"",
+            "type":"portal",
+            "properties": {
+                "position":[-30,0,0],
+                "orientation":[0,0.7071067811865475,0,0.7071067811865476],
+                "persist":false,
+                "url":"/media/internetVRchive/scenes/pantheon.json",
+                "title":"home",
+                "childposition":[0,0,0],
+                "childorientation":[0,0,0,1],
+                "childscale":[0.1,0.1,0.1],
+                "render.meshname":"pantheon"
+            }
+        }
+    }
+}
