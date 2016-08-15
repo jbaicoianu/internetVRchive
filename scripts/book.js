@@ -80,6 +80,10 @@ elation.require(['engine.things.generic', 'engine.things.sound'], function() {
 
         this.parts['page_left'].children[0].material.map = this.pages[pageid_left];
         this.parts['page_right'].children[0].material.map = this.pages[pageid_right];
+        this.parts['page_left'].children[0].material.specular.setHex(0x060606);
+        this.parts['page_right'].children[0].material.specular.setHex(0x060606);
+        //this.parts['page_right'].children[0].material.specular = 0;
+        console.log(this.parts['page_right'].children[0].material);
 
         // Prefetch the next 4 pages (two page flips), to avoid delays
         this.fetchPage(pagenum + 2);
