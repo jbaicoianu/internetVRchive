@@ -10,7 +10,7 @@
         },
         "fog.enabled": false,
         "fog.color": "0x666666",
-        "persist": true
+        "persist": false
     },
     "things": {
         "sky":{
@@ -19,7 +19,7 @@
             "type":"skysphere",
             "properties":{
                 "collidable":false,
-                "persist":true,
+                "persist":false,
                 "skytexture":"/media/internetVRchive/images/galaxy_starfield.png"
             }
         },
@@ -29,7 +29,7 @@
             "type": "light",
             "properties": {
                 "position": [ -20, 50, 25 ],
-                "persist": true,
+                "persist": false,
                 "type": "directional",
                 "intensity": 0
             }
@@ -40,99 +40,127 @@
             "type": "generic",
             "properties": {
                 "position": [ 0, 0.1, 0 ],
-                "persist": true,
-                "render.collada": "/media/internetVRchive/models/pantheon/pantheon.dae",
+                "orientation": [ 0, 1, 0, 0 ],
+                "persist": false,
+                "render.meshname": "pantheon",
                 "collidable": false
             },
             "things": {
-                "speaker": {
-                    "name": "speaker",
-                    "parentname": "",
-                    "type": "portal",
+                "empty": {
+                    "name": "empty",
+                    "type": "generic",
                     "properties": {
-                        "position": [ 15.642180626715339, 0, -15.11706686581791 ],
-                        "orientation": [ 0, -0.3826834323650898, 0, 0.9238795325112867 ],
-                        "childposition": [ 0, 3.325, 0 ],
-                        "childorientation": [ 0, 1, 0, 0 ],
-                        "childscale": [ 10, 10, 10 ],
-                        "persist": true,
-                        "render.collada": "/media/internetVRchive/models/audio/technics-rs-bx404.dae",
-                        "title": "Audio",
-                        "url": "/media/internetVRchive/scenes/audio.json"
-                    }
-                },
-                "arcademachine": {
-                    "name": "arcademachine",
-                    "parentname": "",
-                    "type": "portal",
-                    "properties": {
-                        "position": [ -16.98729113434854, 0, -16.024009709853875 ],
-                        "orientation": [ 0, 0.3826834323650898, 0, 0.9238795325112867 ],
-                        "childscale": [ 4, 4, 4 ],
-                        "persist": true,
-                        "render.collada": "/media/internetVRchive/models/games/cabinet.dae",
-                        "title": "Games"
-                    }
-                },
-                "computer": {
-                    "name": "computer",
-                    "parentname": "",
-                    "type": "portal",
-                    "properties": {
-                        "position": [ -23.04787289890349, 0, 0.42720916273077414 ],
-                        "orientation": [ 0, 0.7071067811865475, 0, 0.7071067811865476 ],
-                        "childposition": [ 0, 3, 0 ],
-                        "childscale": [ 6, 6, 6 ],
-                        "persist": true,
-                        "render.collada": "/media/internetVRchive/models/software/ibmpc.dae",
-                        "title": "Software"
-                    }
-                },
-                "filmcamera": {
-                    "name": "filmcamera",
-                    "parentname": "",
-                    "type": "portal",
-                    "properties": {
-                        "position": [ 21.402444230592554, 0, 0.558850614402342 ],
-                        "orientation": [ 0, -0.7071067811865475, 0, 0.7071067811865476 ],
-                        "childposition": [ 0, 2.5, 0 ],
-                        "childscale": [ 3, 3, 3 ],
-                        "persist": true,
-                        "render.collada": "/media/internetVRchive/models/audio/filmcamera.dae",
-                        "title": "Film",
-                        "url": "/media/internetVRchive/scenes/film.json"
-                    }
-                },
-                "book": {
-                    "name": "book",
-                    "parentname": "",
-                    "type": "portal",
-                    "properties": {
-                        "position": [ -0.09621099263684141, 0, -20.04188183723812 ],
-                        "orientation": [ 0, 0, 0, 1 ],
-                        "childposition": [ 0, 2.5, 0 ],
-                        "childscale": [ 10, 10, 10 ],
-                        "childorientation": [ 0, 0, 0, 1 ],
-                        "persist": true,
-                        "render.collada": "/media/internetVRchive/models/books/book-open/book-open.dae",
-                        "title": "Books",
-                        "url": "/media/internetVRchive/scenes/books.json"
+                        "orientation": [ 0, 1, 0, 0 ]
+                    },
+                    "things": {
+                        "speaker": {
+                            "name": "speaker",
+                            "parentname": "",
+                            "type": "portal",
+                            "properties": {
+                                "position": [ 15.642180626715339, 0, -15.11706686581791 ],
+                                "orientation": [ 0, -0.3826834323650898, 0, 0.9238795325112867 ],
+                                "childposition": [ 0, 3.325, 0 ],
+                                "childorientation": [ 0, 1, 0, 0 ],
+                                "childscale": [ 10, 10, 10 ],
+                                "persist": false,
+                                "render.collada": "/media/internetVRchive/models/audio/technics-rs-bx404.dae",
+                                "title": "Audio",
+                                "url": "/media/internetVRchive/scenes/audio.json"
+                            }
+                        },
+                        "arcademachine": {
+                            "name": "arcademachine",
+                            "parentname": "",
+                            "type": "portal",
+                            "properties": {
+                                "position": [ -14.98729113434854, 0, -14.024009709853875 ],
+                                "orientation": [ 0, 0.3826834323650898, 0, 0.9238795325112867 ],
+                                "childposition": [ 0, 0, -3 ],
+                                "childscale": [ 3, 3, 3 ],
+                                "persist": false,
+                                "render.collada": "/media/internetVRchive/models/games/cabinet.dae",
+                                "title": "Games",
+                                "url": "/media/internetVRchive/scenes/games.json"
+                            }
+                        },
+                        "computer": {
+                            "name": "computer",
+                            "parentname": "",
+                            "type": "portal",
+                            "properties": {
+                                "position": [ -23.04787289890349, 0, 0.42720916273077414 ],
+                                "orientation": [ 0, 0.7071067811865475, 0, 0.7071067811865476 ],
+                                "childposition": [ 0, 3, 0 ],
+                                "childscale": [ 6, 6, 6 ],
+                                "persist": false,
+                                "render.collada": "/media/internetVRchive/models/software/ibmpc.dae",
+                                "title": "Software"
+                            }
+                        },
+                        "filmcamera": {
+                            "name": "filmcamera",
+                            "parentname": "",
+                            "type": "portal",
+                            "properties": {
+                                "position": [ 21.402444230592554, 0, 0.558850614402342 ],
+                                "orientation": [ 0, -0.7071067811865475, 0, 0.7071067811865476 ],
+                                "childposition": [ 0, 2.5, 0 ],
+                                "childscale": [ 3, 3, 3 ],
+                                "persist": false,
+                                "render.collada": "/media/internetVRchive/models/audio/filmcamera.dae",
+                                "title": "Film",
+                                "url": "/media/internetVRchive/scenes/film.json"
+                            }
+                        },
+                        "book": {
+                            "name": "book",
+                            "parentname": "",
+                            "type": "portal",
+                            "properties": {
+                                "position": [ -0.09621099263684141, 0, -20.04188183723812 ],
+                                "orientation": [ 0, 0, 0, 1 ],
+                                "childposition": [ 0, 2.5, 0 ],
+                                "childscale": [ 10, 10, 10 ],
+                                "childorientation": [ 0, 0, 0, 1 ],
+                                "persist": false,
+                                "render.collada": "/media/internetVRchive/models/books/book-open/book-open.dae",
+                                "title": "Books",
+                                "url": "/media/internetVRchive/scenes/books.json"
+                            }
+                        }
                     }
                 }
             }
         },
-        "player": {
-            "name": "player",
+        "playertrack": {
+            "name": "playertrack",
             "parentname": "",
-            "type": "player",
+            "type": "pathtracker",
             "properties": {
-                "position": [ -0.6116908773696781, 14.60229476997803, 180],
-                "orientation": [ 0, 0, 0, 1 ],
-                "acceleration": [ -0.0017908185310051108, 0.0005513645296634185, -0.002389317316849559 ],
-                "mass": 10,
-                "persist": true,
-                "startposition": [ -0.6116908773696781, 14.60229476997803, 180 ],
-                "startcameraorientation": [ -0.030945059056338594, -0, -0, 0.99952108698116 ]
+                "position": [ -0.5, 2, 0 ],
+                "startposition": [ 0, 14.60229476997803, 180 ],
+                "path": [
+                    { "x": 0, "y": 14.60229476997803, "z": 180 },
+                    { "x": 0, "y": 1, "z": 0 }
+                ],
+                "autostart": true,
+                "autostartdelay": 5,
+                "tracktime": 45
+            },
+            "things": {
+                "player": {
+                    "name": "player",
+                    "parentname": "",
+                    "type": "player",
+                    "properties": {
+                        "orientation": [ 0, 0, 0, 1 ],
+                        "startcameraorientation": [ -0.030945059056338594, -0, -0, 0.99952108698116 ],
+                        "mass": 10,
+                        "persist": true,
+                        "movespeed": 0
+                    }
+                }
             }
         },
         "blackplane01": {
@@ -191,7 +219,7 @@
           "parentname":"",
           "type":"sound",
           "properties":{
-            "persist":true,
+            "persist":false,
             "src":"https://ia801900.us.archive.org/13/items/trance_21/08-14LompeBeukerTrance.ogg",
             "position": [ -0.625, 0, 133.09122620856533 ],
             "distance": 130
@@ -202,7 +230,7 @@
           "parentname":"",
           "type":"sound",
           "properties":{
-            "persist":true,
+            "persist":false,
             "src":"https://archive.org/download/Monks_Of_The_Visoki_Decani_Monastry_Paraklesis__Kosovo_/22_All_Hosts_Of_Angels.ogg",
             "position": [ -0.625, 0, -5 ],
             "distance": 35,
